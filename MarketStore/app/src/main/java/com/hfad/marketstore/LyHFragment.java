@@ -18,7 +18,7 @@ public class LyHFragment extends Fragment {
 
     ListView listv;
     ArrayAdapter<String> adapter;
-    String[] lyh = {"Lyson", "Fabuloso", "Pinol", "Jabon de ropa MarketPlace", "Jabol de cuerpo MarketPlace", "Shampoo"};
+    String[] lyh = {"Americano", "Chai", "Tisana", "Vietnamita", "Mocha", "Matcha", "Latte"};
 
 
     public LyHFragment() {
