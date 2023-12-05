@@ -16,8 +16,7 @@ public class InformacionFragment extends Fragment {
     }
 
     public static InformacionFragment newInstance(String param1, String param2) {
-        InformacionFragment fragment = new InformacionFragment();
-        return fragment;
+        return new InformacionFragment();
     }
 
     @Override

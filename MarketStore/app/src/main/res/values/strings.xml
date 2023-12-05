@@ -4,6 +4,23 @@
     <string name="password_hint">Password</string>
     <string name="repassword_hint">Confirm Password</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_description">Proyecto realizado con la finalidad de mejorar la experincia del cliente, al reducir los tiempos de espera y permitir lapersonalización de las órdenes\n\t- Facilitar a los empleados la creación de órdenes de café de manera eficiente y precisa\n\t- Implementar una interfaz de usuario inuitiva para el control de flujo de la aplicación</string>
+    <string name="informacion_estudiantes">INFORMACION DE LOS ESTUDIANTES:</string>
+    <string name="cristina">Nombre: Torres Gastelum Cristina Marlen\nMatrícula: 1261889\n\nNombre: Lopez Valencia Luis Angel\nMatrícula: 1262057\n\nNombre: Gómez Cárdenas Emmanuel Alberto\nMatrícula: 1261509\n\nNombre: Sibaja Gomez Sirc David\nMatrícula: 1272558\n\nNombre: Osuna Hernández Cesar Alexis\nMatrícula: 1262460\n\nNombre: Mendoza Virgen Mario\nMatrícula: 1261594</string>
+    <string name="info">INFORMACION</string>
+    <string name="menu">MENU</string>
+    <string name="logout">Logout</string>
+    <string name="carrito">CARRITO</string>
+    <string name="agregar_al_carrito">AGREGAR AL CARRITO</string>
+    <string name="informacion">INFORMACION</string>
+    <string name="descripcion">DESCRIPCION:</string>
+    <string name="descripcion_producto">Descripcion del producto</string>
+    <string name="kg">kg</string>
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+    <string name="enviar_mensaje">ENVIAR MENSAJE</string>
+    <string name="cerrar_sesion">CERRAR SESION</string>
+    <string name="ver_pedidos">VER PEDIDOS</string>
 
     <string-array name="cantidades">
         <item>1</item>
