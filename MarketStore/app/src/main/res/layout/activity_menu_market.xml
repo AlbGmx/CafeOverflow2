@@ -12,7 +12,7 @@
         android:id="@+id/btn_logout"
         android:layout_width="139dp"
         android:layout_height="49dp"
-        android:text="Logout"
+        android:text="@string/logout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -20,7 +20,7 @@
         android:id="@+id/btn_carrito"
         android:layout_width="115dp"
         android:layout_height="49dp"
-        android:text="CARRITO"
+        android:text="@string/carrito"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -28,20 +28,20 @@
         android:id="@+id/fragmentView"
         android:name="com.hfad.marketstore.MenuFragment"
         android:layout_width="0dp"
-        android:layout_height="563dp"
+        android:layout_height="0dp"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toTopOf="@+id/btn_informacion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_logout"
-        app:layout_constraintVertical_bias="0.046" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btn_informacion"
         android:layout_width="150dp"
         android:layout_height="49dp"
-        android:text="INFORMACION"
+        android:text="@string/info"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_carrito"
         app:layout_constraintStart_toEndOf="@+id/btn_ops" />
@@ -50,7 +50,7 @@
         android:id="@+id/btn_ops"
         android:layout_width="115dp"
         android:layout_height="49dp"
-        android:text="MENU"
+        android:text="@string/menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

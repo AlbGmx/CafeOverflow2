@@ -36,17 +36,17 @@ public class Pedidos extends AppCompatActivity {
         btn_maps = findViewById(R.id.btn_maps);
 
         txt_nombre_usuario_final.setText(MainActivity.name_user);
-        txt_tota_pagar.setText("$"+Integer.toString(CarritoAdapter.totals)+".00");
+        txt_tota_pagar.setText("$"+ CarritoAdapter.totals +".00");
 
         no_pedido= (int) (Math.random() * 10000000 + 1000);
-        txt_no_pedido.setText("#"+String.valueOf(no_pedido));
+        txt_no_pedido.setText("#"+ no_pedido);
 
 
         btn_enviar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:"+txt_correo_enviar_pedido.getText().toString()));
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:"+ txt_correo_enviar_pedido.getText().toString()));
                 intent.putExtra(Intent.EXTRA_SUBJECT, "Pedido No."+txt_no_pedido.getText().toString()+" - Market Store");
 
                CarritoAdapter car = new CarritoAdapter(getBaseContext(), CarritoAdapter.lst);
@@ -68,8 +68,8 @@ public class Pedidos extends AppCompatActivity {
         btn_maps.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Uri mercadosIntent = Uri.parse("geo:0,0?q=wallmart");
-                Intent intent = new Intent(Intent.ACTION_VIEW, mercadosIntent);
+                Uri mapsIntent = Uri.parse("geo:0,0?q=cafe");
+                Intent intent = new Intent(Intent.ACTION_VIEW, mapsIntent);
                 intent.setPackage("com.google.android.apps.maps");
                 startActivity(intent);
             }
