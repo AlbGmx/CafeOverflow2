@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo3"
+    android:background="@drawable/principal"
     tools:context=".VentanaLista2">
 
     <androidx.fragment.app.FragmentContainerView
@@ -24,8 +24,9 @@
         android:id="@+id/btn_menu_ventana"
         android:layout_width="115dp"
         android:layout_height="49dp"
-        android:text="MENU"
+        android:text="@string/menu"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_info_ventana"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frag_prod" />
 
@@ -33,16 +34,18 @@
         android:id="@+id/btn_info_ventana"
         android:layout_width="150dp"
         android:layout_height="49dp"
-        android:text="INFORMACION"
+        android:text="@string/info"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_carrito_ventana"
         app:layout_constraintStart_toEndOf="@+id/btn_menu_ventana"
-        app:layout_constraintTop_toBottomOf="@+id/frag_prod" />
+        app:layout_constraintTop_toBottomOf="@+id/frag_prod"
+        tools:ignore="TextSizeCheck" />
 
     <Button
         android:id="@+id/btn_carrito_ventana"
         android:layout_width="115dp"
         android:layout_height="49dp"
-        android:text="CARRITO"
+        android:text="@string/carrito"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btn_info_ventana"

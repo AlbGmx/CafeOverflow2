@@ -15,7 +15,8 @@
         app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_nombre_producto"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <TextView
         android:id="@+id/txt_nombre_producto"
@@ -34,7 +35,7 @@
         android:layout_width="128dp"
         android:layout_height="24dp"
         android:layout_marginTop="12dp"
-        android:text="DESCRIPCION:"
+        android:text="@string/descripcion"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.116"
@@ -46,7 +47,7 @@
         android:layout_width="337dp"
         android:layout_height="69dp"
         android:layout_marginTop="8dp"
-        android:text="Descripcion del producto"
+        android:text="@string/descripcion_producto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.445"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,10 +78,12 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:text="Tamaño:"
         android:textSize="20sp"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.133"
         app:layout_constraintStart_toStartOf="parent"
@@ -120,7 +123,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
-        android:text="AGREGAR AL CARRITO"
+        android:text="@string/agregar_al_carrito"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.488"
@@ -133,31 +136,44 @@
         android:layout_width="115dp"
         android:layout_height="49dp"
         android:layout_marginStart="4dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="4dp"
         android:layout_marginBottom="4dp"
-        android:text="MENU"
+        android:text="@string/menu"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/btn_informacion_prod"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_agregar" />
 
     <Button
         android:id="@+id/btn_informacion_prod"
         android:layout_width="150dp"
         android:layout_height="49dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="4dp"
         android:layout_marginBottom="4dp"
-        android:text="INFORMACION"
+        android:text="@string/info"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_logout_prod"
         app:layout_constraintHorizontal_bias="0.733"
-        app:layout_constraintStart_toEndOf="@+id/btn_menu_prod" />
+        app:layout_constraintStart_toEndOf="@+id/btn_menu_prod"
+        app:layout_constraintTop_toBottomOf="@+id/btn_agregar"
+        tools:ignore="TextSizeCheck" />
 
     <Button
         android:id="@+id/btn_logout_prod"
         android:layout_width="115dp"
         android:layout_height="49dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="4dp"
-        android:text="LogOut"
+        android:text="@string/logout"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_informacion_prod"
+        app:layout_constraintTop_toBottomOf="@+id/btn_agregar" />
 
     <TextView
         android:id="@+id/lbl_precio"
