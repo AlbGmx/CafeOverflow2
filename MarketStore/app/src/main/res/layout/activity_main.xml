@@ -11,8 +11,8 @@
 
     <ImageView
         android:id="@+id/iv_register"
-        android:layout_width="239dp"
-        android:layout_height="162dp"
+        android:layout_width="269dp"
+        android:layout_height="198dp"
         android:layout_marginTop="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
