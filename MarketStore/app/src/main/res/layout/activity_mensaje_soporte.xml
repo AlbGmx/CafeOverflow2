@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202732"
+    tools:context=".MensajeSoporte">
+
+    <TextView
+        android:id="@+id/txt_mensaje_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="ENVIAR MENSAJE"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etxt_correo_soporte"
+        android:layout_width="356dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:text="cristina.torres@uabc.edu.mx"
+        android:background="@drawable/round_text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_mensaje_title" />
+
+    <EditText
+        android:id="@+id/etxt_asunto_soporte"
+        android:layout_width="356dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="Asunto"
+        android:inputType="textPersonName"
+        android:textColor="#FDFDFD"
+        android:background="@drawable/round_text"
+        android:textColorHint="#D1D0D0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxt_correo_soporte" />
+
+    <EditText
+        android:id="@+id/etxt_mensaje"
+        android:layout_width="356dp"
+        android:layout_height="461dp"
+        android:background="@drawable/round_text"
+        android:ems="10"
+        android:gravity="start"
+        android:hint="Escribe mensaje"
+        android:inputType="textPersonName"
+        android:textColorHint="#CCC9C9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxt_asunto_soporte" />
+
+    <Button
+        android:id="@+id/btn_enviar_mensaje"
+        android:layout_width="126dp"
+        android:layout_height="56dp"
+        android:text="ENVIAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxt_mensaje" />
+</androidx.constraintlayout.widget.ConstraintLayout>
