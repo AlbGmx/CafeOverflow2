@@ -18,7 +18,7 @@ public class JugueteriaFragment extends Fragment {
     static public int jugue_selector = -1;
     ListView listv;
     ArrayAdapter<String> adapter;
-    String[] juguetes = {"Muñeca Barbie", "Oso de peluche", "Carritos Hotweels", "Legos", "Rompecabezas de Perritos"};
+    String[] juguetes = {"Brownie", "Galleta", "Deli barras"};
 
     public JugueteriaFragment() {
         // Required empty public constructor

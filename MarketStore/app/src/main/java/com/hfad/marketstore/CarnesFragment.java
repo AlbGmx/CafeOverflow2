@@ -18,7 +18,7 @@ public class CarnesFragment extends Fragment {
     static public int car_selection = -1;
     ListView listv;
     ArrayAdapter<String> adapter;
-    String[] carnes = {"Filete de RES (kg)", "Filete de CERDO (kg)", "Filete de PESCADO (kg)", "Nuggets de POLLO (pza)", "Pollo (kg)", "Salchicha (KG)", "Jamon (kg)" };
+    String[] carnes = {"Mocha", "Brownie", "Oreo", "Mazapán", "Chai", "Tisana", "Matcha" };
 
 
     public CarnesFragment() {

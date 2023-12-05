@@ -19,7 +19,7 @@ public class FyVFragment extends Fragment {
 
     ListView listv;
     ArrayAdapter<String> adapter;
-    String[] fyv = {"Manzana Roja", "Manzana Verde", "Peras", "Fresas", "Platano", "Naranja","Sandia"};
+    String[] fyv = {"Americano", "Espresso", "Espresso Cortado", "Chai", "Tisana","Vietnamita", "Mocha","Chocolate","Matcha","Capuchino","Latte"};
 
 
     public FyVFragment() {

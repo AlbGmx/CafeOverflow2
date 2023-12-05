@@ -70,21 +70,50 @@
         android:layout_height="49dp"
         android:layout_marginTop="20dp"
         android:entries="@array/cantidades"
-        app:layout_constraintEnd_toStartOf="@+id/txt_tipo"
         app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toEndOf="@+id/lbl_cantidad"
         app:layout_constraintTop_toBottomOf="@+id/txt_precio_edit" />
 
     <TextView
-        android:id="@+id/txt_tipo"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="40dp"
-        android:text="kg"
-        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Tamaño:"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lbl_precio" />
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_cantidad" />
+
+    <RadioGroup
+        android:id="@+id/Tamaños"
+        android:layout_width="102dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/snr_cant">
+
+        <RadioButton
+            android:id="@+id/chico"
+            android:layout_width="92dp"
+            android:layout_height="35dp"
+            android:text="12oz"
+            android:textSize="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/amount"
+            tools:layout_editor_absoluteX="95dp" />
+
+        <RadioButton
+            android:id="@+id/grande"
+            android:layout_width="91dp"
+            android:layout_height="36dp"
+            android:text="16oz"
+            android:textSize="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/chico"
+            tools:layout_editor_absoluteX="96dp" />
+    </RadioGroup>
 
     <Button
         android:id="@+id/btn_agregar"
@@ -94,10 +123,10 @@
         android:text="AGREGAR AL CARRITO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/snr_cant"
-        app:layout_constraintVertical_bias="0.291" />
+        app:layout_constraintVertical_bias="0.525" />
 
     <Button
         android:id="@+id/btn_menu_prod"

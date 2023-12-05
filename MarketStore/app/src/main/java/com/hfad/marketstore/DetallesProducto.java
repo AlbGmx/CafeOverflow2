@@ -38,7 +38,6 @@ public class DetallesProducto extends AppCompatActivity {
         lbl_producto = findViewById(R.id.txt_nombre_producto);
         lbl_descripcion = findViewById(R.id.txt_descripcion);
         txt_precio = findViewById(R.id.txt_precio_edit);
-        txt_tipo = findViewById(R.id.txt_tipo);
         btn_agregar = findViewById(R.id.btn_agregar);
         cant = findViewById(R.id.snr_cant);
 
@@ -49,15 +48,11 @@ public class DetallesProducto extends AppCompatActivity {
                 if (LyHFragment.lyh_selector == -1)
                     if(JugueteriaFragment.jugue_selector == -1)
                         if (FarmaciaFragment.farm_selector == -1)
-                            if(AlimentosFragment.alim_selector == -1)
-                                if(DySFragment.dys_selector == -1)
                                     indicador = 1; //PENDIENTE
-                                else indicador =  (DySFragment.dys_selector+40);
-                            else indicador = (AlimentosFragment.alim_selector+33);
-                        else indicador = (FarmaciaFragment.farm_selector+25);
-                    else indicador= (JugueteriaFragment.jugue_selector + 20);
-                else indicador = (LyHFragment.lyh_selector+14);
-            else indicador = (CarnesFragment.car_selection + 7);
+                        else indicador = (FarmaciaFragment.farm_selector+28);
+                    else indicador= (JugueteriaFragment.jugue_selector + 25);
+                else indicador = (LyHFragment.lyh_selector+18);
+            else indicador = (CarnesFragment.car_selection + 11);
         else indicador =  FyVFragment.seleccion_prod;
 
         Productos_details pd = Productos_details.productos[indicador];
@@ -72,19 +67,14 @@ public class DetallesProducto extends AppCompatActivity {
             lst = new ArrayList<>();
         }
 
-        if(tipo_verificado == 0){
-            txt_tipo.setText("Kg");}
-        else if (tipo_verificado == 1){
-            txt_tipo.setText("Pza");}
-        else{
-            txt_tipo.setText("Cja");}
+
 
 
         btn_agregar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 lst.add(new prod_carrito(1, pd.getImageResourceId(), pd.getName(), pd.getPrecio(), cant.getSelectedItemPosition()+1));
-                Toast.makeText(getBaseContext(), "Anadido", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getBaseContext(), "Añadido", Toast.LENGTH_SHORT).show();
             }
         });
 

@@ -20,7 +20,7 @@ public class MenuFragment extends Fragment {
     static public int i_select ;
     ListView listv;
     ArrayAdapter<String> adapter;
-    String[] opciones = {"FRUTAS Y VERDURAS", "CARNES", "LIMPIEZA Y HOGAR", "JUGUETERIA", "FARMACIA", "ALIMENTOS", "DULCERIA Y SODAS"};
+    String[] opciones = {"Bebidas Calientes", "Frappes", "En las rocas", "Postres"};
 
     public MenuFragment() {
         // Required empty public constructor
